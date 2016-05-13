@@ -15,4 +15,4 @@
 13. Модули
 14. Proxy
 
-[Основной источник](https://learn.javascript.ru/es-modern)
+Основной источник - [https://learn.javascript.ru/es-modern](https://learn.javascript.ru/es-modern)
