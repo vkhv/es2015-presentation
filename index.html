@@ -56,6 +56,10 @@
 			<li>При использовании в цикле, для каждой итерации создаётся своя переменная.</li>
 		</ol>
 	</section>
+
+
+
+
 	<section class="slide">
 		<h2>Переменные: let и const</h2>
 		<b>const</b>
@@ -63,13 +67,66 @@
 		<p class="note">Заметим, что если в константу присвоен объект, то от изменения защищена сама константа, но не свойства внутри неё. В остальном объявление const полностью аналогично let.</p>
 	</section>
 	<section class="slide">
+		<h2>Деструктуризация</h2>
+
+		<p>Деструктуризация (destructuring assignment) – это особый синтаксис присваивания, при котором можно присвоить массив или объект сразу нескольким переменным, разбив его на части.</p>
+		<pre>
+			<code>let [x, y] = [1, 2];</code>
+		</pre>
+
+	</section>
+	<section class="slide">
+		<h2>Деструктуризация</h2>
+
+		<p>Если мы хотим получить и последующие значения массива, но не уверены в их числе – можно добавить ещё один параметр, который получит «всё остальное», при помощи оператора "..." («spread», троеточие):</p>
+		<pre>
+			<code>let [x, y, ...rest] = [1, 2, 3, 4, 5];</code>
+			<code>console.log(rest) //=> [3, 4, 5]</code>
+		</pre>
+
+	</section>
+		<section class="slide">
+		<h2>Деструктуризация</h2>
+
+		<p>Объекты</p>
+		<pre>
+			<code>let {title, width} = {title: "Меню", width: 1}</code>
+		</pre>
+
+	</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<section class="slide">
 		<h2>Plain text on your slides</h2>
 		<p>Lorem ipsum dolor sit amet, consectetur <a href="#4">adipisicing</a> elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, <em>quis nostrud</em> exercitation ullamco laboris <strong>nisi ut aliquip</strong> ex ea commodo consequat. Duis aute irure <i>dolor</i> in reprehenderit in voluptate velit esse cillum <b>dolore</b> eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in <code>&lt;culpa&gt;</code> qui officia deserunt mollit anim id est laborum.</p>
 	</section>
+
+
+
+
+
+
+
+
 	<section class="slide">
 		<h2>Two columns if you like</h2>
 		<p class="double">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia.</p>
 	</section>
+
+
+
 	<section class="slide">
 		<h2>All kind of lists</h2>
 		<ol>
@@ -188,6 +245,11 @@
 			<a href="https://github.com/lukehoban/es6features">es6features</a><br>
 			<a href="http://exploringjs.com/es6/index.html">exploringjs</a><br>
 			<a href="https://learn.javascript.ru/es-modern-usage">javascript.ru</a>
+	</section>
+		<section class="slide">
+		 <iframe src="galaxy/index.html" width="100%" height="100%" align="left" class='cover'>
+		    Ваш браузер не поддерживает плавающие фреймы!
+		 </iframe>
 	</section>
 	<p class="badge">
 		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
