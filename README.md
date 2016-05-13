@@ -1,8 +1,5 @@
 # Презентация - О современных возможностия ES-2015
 
-<img src="pictures/logo.png" width="250" alt="Shower logo">
-
-
 
 1. Переменные: let и const
 2. Деструктуризация
