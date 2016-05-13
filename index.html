@@ -40,16 +40,27 @@
 		</style>
 	</section>
 	<section class="slide">
-		<h2>Shower key features</h2>
+		<h2>Переменные: let и const</h2>
+		<style>
+			#\32 > a {
+				background: none;
+				color: black;
+				font-weight: bold;
+			}
+		</style>
+		<a href="http://codepen.io/vladkhvo/pen/JXVRwX">let</a>
+		<p>У объявлений переменной через let есть три основных отличия от <a href="http://codepen.io/vladkhvo/pen/yOraQr">var</a></p>
 		<ol>
-			<li>Built on HTML, CSS and vanilla JavaScript</li>
-			<li>Works in all modern browsers</li>
-			<li>Themes are separated from engine</li>
-			<li>Modular and extensible</li>
-			<li>Fully keyboard accessible</li>
-			<li>Printable to PDF</li>
+			<li>Область видимости переменной let – блок {...}.</li>
+			<li>Переменная let видна только после объявления.</li>
+			<li>При использовании в цикле, для каждой итерации создаётся своя переменная.</li>
 		</ol>
-		<p class="note">Shower ['ʃəuə] noun. A person or thing that shows.</p>
+	</section>
+	<section class="slide">
+		<h2>Переменные: let и const</h2>
+		<b>const</b>
+		<p>Объявление const задаёт константу, то есть переменную, которую нельзя менять. В остальном объявление const полностью аналогично let.</p>
+		<p class="note">Заметим, что если в константу присвоен объект, то от изменения защищена сама константа, но не свойства внутри неё. В остальном объявление const полностью аналогично let.</p>
 	</section>
 	<section class="slide">
 		<h2>Plain text on your slides</h2>
