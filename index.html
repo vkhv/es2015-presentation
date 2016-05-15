@@ -78,13 +78,11 @@
 	</section>
 	<section class="slide">
 		<h2>Деструктуризация</h2>
-
 		<p>Если мы хотим получить и последующие значения массива, но не уверены в их числе – можно добавить ещё один параметр, который получит «всё остальное», при помощи оператора "..." («spread», троеточие):</p>
 		<pre>
 			<code>let [x, y, ...rest] = [1, 2, 3, 4, 5];</code>
 			<code>console.log(rest) //=> [3, 4, 5]</code>
 		</pre>
-
 	</section>
 		<section class="slide">
 		<h2>Деструктуризация</h2>
@@ -93,7 +91,45 @@
 		<pre>
 			<code>let {title, width} = {title: "Меню", width: 1}</code>
 		</pre>
+	</section>
+	</section>
+	<section class="slide">
+		<h2>Функции</h2>
 
+		<p>В функциях основные изменения касаются передачи параметров, плюс введена дополнительная короткая запись через стрелочку =>.</p>
+		<p>Параметры по умолчанию:</p>
+		<pre>
+			<code>
+function showMenu(width = 100, height = 200) {
+	alert(${width} ${height}`);
+}
+			</code>
+		</pre>
+	</section>
+<section class="slide">
+		<h2>Функции</h2>
+		<p>Оператор <strong>spread</strong> вместо arguments.</p>
+
+		<pre>
+			<code>
+function showName(firstName, lastName, ...rest) {
+	alert(`${firstName} ${lastName} - ${rest}`);
+}
+
+// выведет: Юлий Цезарь - Император,Рима
+showName("Юлий", "Цезарь", "Император", "Рима");
+			</code>
+		</pre>
+	</section>
+<section class="slide">
+		<h2>Функции</h2>
+		<p>Функции через <strong>=></strong></p>
+		<p>Слева от => находится аргумент, а справа – выражение, которое нужно вернуть.</p>
+		<pre>
+			<code>
+			var odds = evens.map(v => v + 1);
+			</code>
+		</pre>
 	</section>
 
 
