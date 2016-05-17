@@ -155,8 +155,54 @@ showName("Юлий", "Цезарь", "Император", "Рима");
 		</ul>
 	</section>
 
+	<section class="slide">
+		<h2>Объекты</h2>
+		Присвоение переменных свойствам объекта.<br>
+		<code>
+let name = 'Admin'; <br>
+let isAdmin = true; <br>
+let user = {
+  name,
+  isAdmin
+};</code>
+	</section>
+	<section class="slide">
+		<h2>Объекты и прототипы</h2>
+		Вычисляемые свойства<br>
+		<pre>
+			<code>
+let user = {
+	[`user` + `Name`]: "Вася"
+};
+// Object {userName: "Вася"}
+			</code>
+		</pre>
+	</section>
+	<section class="slide">
+		<h2>Объекты</h2>
+		Более короткий синтаксис объявления методов<br>
+		<pre>
+			<code>
+let user = {
+  sayHi() {
+    alert(this.name);
+  }
+};
+			</code>
+		</pre>
+	</section>
+
+
+
+
+
+
+
+
+
+
 	<p class="badge">
-		<a href="https://github.com/vladkhvo/es2015-presentation.git">Fork me on GitHub</a>
+		<a href="https://github.com/shower/shower">Fork me on GitHub</a>
 	</p>
 	<!--
 		To hide progress bar from entire presentation
