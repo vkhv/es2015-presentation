@@ -191,6 +191,34 @@ let user = {
 			</code>
 		</pre>
 	</section>
+	<section class="slide">
+		<h2>Set, Map</h2>
+		Новые типы коллекций в JavaScript: Set, Map. 	<br>
+		<strong>Map</strong> – коллекция для хранения записей вида ключ: значение.
+		<pre>
+			<code>
+map.set('1', 'str1');   // ключ-строка
+// в обычном объекте это было бы одно и то же,
+// map сохраняет тип ключа
+alert( map.get(1)); // undefined
+alert( map.get('1')); // 'str1'
+			</code>
+		</pre>
+	</section>
+	<section class="slide">
+		<h2>Set, Map</h2>
+		<strong>Map</strong> – коллекция для хранения множества значений, причём каждое значение может встречаться лишь один раз.
+		<pre>
+			<code>
+let vasya = {name: "Вася"};
+set.add(vasya);
+set.add(vasya);
+// set сохраняет только уникальные значения
+alert( set.size ); // 1
+			</code>
+		</pre>
+	</section>
+
 
 
 
